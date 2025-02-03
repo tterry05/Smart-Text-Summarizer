@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Smart Text Summarizer</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Smart Text Summarizer</h1>
+    <div class="api-key-section">
+      <input type="password" id="apiKey" placeholder="Gemini API Key" />
+      <button id="saveKey">Save Key</button>
+    </div>
+    <!-- New section for TTS settings -->
+    <div class="api-key-section">
+      <input type="text" id="ttsApiKey" placeholder="TTS API Key (Optional)" />
+      <input type="text" id="ttsRegion" placeholder="TTS Region (Optional)" />
+      <button id="saveTtsSettings">Save TTS Settings</button>
+    </div>
+    <!-- New Summarize Text button -->
+    <button id="summarizeText">Summarize Text</button>
+    <p class="instructions">Click "Summarize Text" then select text on any webpage to get an AI-powered summary with text-to-speech.</p>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
